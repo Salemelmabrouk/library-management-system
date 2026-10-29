@@ -1,9 +1,16 @@
 package com.lms.backend.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.Instant;
-
+@Entity
+@Table(name = "notification")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Notification {
 
     @Id

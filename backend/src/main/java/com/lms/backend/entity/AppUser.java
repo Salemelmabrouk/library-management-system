@@ -34,4 +34,11 @@ public class AppUser {
 
     @Column(nullable = false)
     private Instant createdAt;
+
+
+    @Column(name = "reset_password_token")
+    private String resetPasswordToken;
+
+    @Column(name = "reset_password_token_expiry")
+    private Instant resetPasswordTokenExpiry;
 }
